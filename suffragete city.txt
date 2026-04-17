@@ -1,0 +1,31 @@
+mport smtplib
+from email.mime.text import MIMEText
+
+def send_gmail():
+    # (you gm cred)
+    sender_email = "Sample Text@gmail.com"
+    sender_password = "you password"  
+    receiver_email = "rec_email@gmail.com"
+
+    # Email content
+    subject = 'type whatever ya want'
+    body = "type whatever ya want"
+
+    # format message
+    msg = MIMEText(body)
+    msg["Subject"] = subject
+    msg["From"] = sender_email
+    msg["To"] = receiver_email
+
+    try:
+        # connects to gmail smtp server
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+            server.login(sender_email, sender_password)
+            server.sendmail(sender_email, receiver_email, msg.as_string())
+        print("Email sent successfully!")
+
+    except Exception as e:
+        print(f"Error: {e}")
+
+# run function
+send_gmail()
