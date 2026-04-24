@@ -1,4 +1,6 @@
 # email sender template
+[Uploading New Bitmap image.bmp…]()
+
 feutures:
 literal
 note: purely experimental, dont put your real password in the code, you can use app password (if you dont want to do app password it's recommend to use a burner or throwaway account
