@@ -1,5 +1,6 @@
 # stuff
 some stuff i [REDACTED] made for no reason at all
+my god i frogot to rename the foramt for email sender from txt to .py
 [Uploading New Bitmap image.bmp…]()
 
 feutures:
